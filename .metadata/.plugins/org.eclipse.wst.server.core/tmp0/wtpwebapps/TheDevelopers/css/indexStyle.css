@@ -1,0 +1,79 @@
+@import
+	url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap')
+	;
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700;900&display=swap')
+	;
+
+body {
+	background: #f8f8f8;
+}
+
+* {
+	/* width, height는 패딩과 보더를 포함 */
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container {
+	max-width: 1140px;
+	margin: auto;
+}
+
+.row {
+	/* flex는 가로방향으로 배치되고, 자신의 내용물만큼의 width를 차지하게 된다
+	height는 컨테이너의 높이만큼 늘어난다 */
+	display: flex;
+	/* 한줄에 담을 여유공간이 없을시에 대한 줄바꿈 처리 */
+	flex-wrap: wrap;
+	/* justify-content는 flex의 속성이다. 요소의 수평 방향 정렬 방식을 설정한다.
+	space-between은 요소들 사이에만 여유공간을 두고 배치 */
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*Home*/
+.Home {
+	font-weight: 500;
+}
+
+.Home table {
+	margin: 60px auto;
+}
+
+.Home table .center {
+	text-align: center;
+}
+
+.Home table .left {
+	text-align: left;
+}
+
+.Home table .right {
+	text-align: right;	
+}
+
+.Home table a{
+	text-decoration: none;
+	color: #000;
+}
+
+.Home table a:hover{
+	text-decoration: underline;
+	color: #2c7ba3;
+}
+
+.Home table .caption {
+	padding-left: 5px;
+	color: #3f459b;
+}
+
+.Home table .write a{
+	padding-right: 5px;
+}
+
+.Home table .number a:hover{
+	text-decoration: none;
+}

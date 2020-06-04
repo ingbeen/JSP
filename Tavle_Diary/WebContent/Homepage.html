@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
+	<title>YUYEON Couple - Trevel Diary</title>
+	<link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@500&display=swap" rel="stylesheet">
+	<style>
+		/* 페이지구조와 공통사항 */
+		body {
+			width: 960px;
+			margin: 0 auto;
+			background-color: #E6E6E6;
+			font-family: 'Sunflower', sans-serif;
+		}
+		
+		.main {
+			width: 100%;
+			height: 1580px;
+			position: relative;
+			overflow: hidden;
+			background-color: #E9E8EF;
+		}
+		
+		ul{
+			list-style: none;
+		}
+		
+		a{
+			text-decoration: none;
+			color: black;
+		}
+		
+		.logo, .bigbox, .smallbox, .smallbox img, .menubar, 
+		.line, .top, .top_menu, .newposts, .footter, .OtherContent, 
+		.OtherContent div, .OtherContent img {
+			position: absolute;
+		}
+		
+		
+		/* 상단로고와 회원가입, 로그인 */
+		.top {
+			width: 100%;
+			height: 100px;
+			top: 0px;
+		}
+		
+		.logo {
+			width: 280px;
+			height: 45px;
+			left: 25px;
+			top: 30px;
+		}
+		
+		.top_menu{
+			width: 200px;
+			height: 40px;
+			top: 55px;
+			left: 760px;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+		}
+		
+		.top_menu ul {
+			padding: 0;
+		}
+		
+		.top_menu li{
+			float: left;
+			margin: 0 20px;
+		}
+		
+		.top_menu a{
+			font-size: 20px;
+		}
+		
+		.top_menu a:hover{
+			color:#F1DA4A;
+		}
+		
+		.line {
+			width: 960px;
+			top: 85px;
+			left: 0px;
+		}
+		
+		
+		/* 가운데 메뉴바 */
+		.bigbox {
+			width: 300px;
+			height: 240px;
+			top: 456px;
+			background-color: rgba( 214, 211, 211, 0.5 );
+		}
+		
+		.smallbox {
+			width: 260px;
+			height: 200px;
+			top: 20px;
+			left: 20px;
+			background-color: rgba( 235, 235, 235, 0.5 );
+		}
+		
+		.smallbox img {
+			width: 70%;
+			height: 70%;
+			top: 0; 
+			bottom: 0;
+			left:0; 
+			right: 0;
+			margin: auto;
+		}
+		
+		.menubar{
+			width: 660px;
+			height: 120px;
+			top: 576px;
+			left: 300px;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+		}
+		
+		.menubar ul {
+			padding: 0;
+		}
+		
+		.menubar li{
+			float: left;
+			margin: 0 30px;
+		}
+		
+		.menubar a{
+			font-size: 35px;
+		}
+		
+		.menubar a:hover{
+			font-weight:bold;
+		}
+		
+		
+		/* 메뉴바 아래 최신글 */
+		.newposts {
+			width: 100%;
+			height: 600px;
+			top: 720px;
+			display:flex;
+			justify-content:center;
+		}
+		
+		.newposts > div{
+			width: 380px;
+			height: auto;
+			margin: 15px 20px;
+		}
+		
+		.newposts a {
+			display: block;
+			height: auto;
+			width: 100%;
+		}
+		
+		.newposts img {
+			max-width: 100%;
+			max-height: 333px;
+			width: auto;
+			height: auto;
+			margin: auto;
+			display: block;
+		}
+		
+		.newposts h1 {
+			font-size: 27px;
+		}
+		
+		.newposts p {
+			width: 280px;
+			font-size: 20px;
+			color: gray;
+			line-height:25px;
+			max-height: 125px;
+			display: -webkit-box;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			word-break: break-all;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 5
+		}
+		
+		
+		/* 하단부  */
+		.footter {
+			width: 100%;
+			height: 600px;
+			top: 1400px;
+			border-top: 2px solid gray;
+		}
+		
+		.OtherContent{
+			width: 600px;
+			height: 150px;
+			top: 10px;
+			left: 50%;
+			margin-left: -300px;
+		}
+		
+		.OtherContent div {
+			left: 50%;
+   			top: 10px;
+   			margin-left: -104px;
+			font-size: 25px;
+		}
+		
+		.instagram {
+			width: 80px;
+			top: 55px;
+			left: 150px;
+		}
+		
+		.youtube {
+			width: 160px;
+			top: 55px;
+			left: 290px;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<!-- 메인 이미지 -->
+		<img src = image/main.jpg>
+		
+		
+		<!-- 상단로고와 회원가입, 로그인 -->
+		<div class="top">
+			<a href="http://localhost:8080/Tavle_Diary/Homepage.html"><img class="logo" src = image/logo.png></a>
+			<img class="line" src = image/line.png>
+			<div class="top_menu">
+				<ul>
+					<li><a href="#">Sing Up</a></li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!-- 메뉴바 옆 박스 -->
+		<div class="bigbox">
+			<div class="smallbox">
+				<img src = image/bigmenu.png>
+			</div>
+		</div>
+		
+		
+		<!-- 가운데 메뉴바 -->
+		<div class="menubar">
+			<ul>
+				<li><a href="#">소개</a></li>
+				<li><a href="#">로드맵</a></li>
+				<li><a href="#">일기장</a></li>
+				<li><a href="#">갤러리</a></li>
+			</ul>
+		</div>
+		
+		
+		<!-- 메뉴바 아래 최신글 -->
+		<div class="newposts">
+			<!-- 왼쪽 글 -->
+			<div>
+				<a href="#">
+					<img src = image/newposts_1.jpeg>
+					<div>
+						<h1>잃어버린 도시, 마추픽추</h1>
+						<p>
+						2019. 04. 04 
+						새벽 4시, 아구아스 깔리엔테스의 아침은 해가 뜨기전부터 시작된다.
+						공용욕실에서는 벌써부터 씻는 소리가 들려오고 옆방에서는 다른 여행자들의
+						알람소리가 울려퍼졌다
+						</p>
+					</div>
+				</a>
+			</div>
+			
+			<!-- 가운데 글 -->
+			<div>
+				<a href="#">
+					<img src = image/newposts_2.jpg>
+					<div>
+						<h1>사하라사막에서 살아남기</h1>
+						<p>
+						2019. 05. 01 
+						모로코의 "하실라비드"라는 도시에는 사하라사막이 있다.
+						많은 여행자들은 돈을 주고 모래를 먹기 위해 이곳에 방문한다.
+						우리도 모래맛을 보기 위해 야간버스를 타고
+						</p>
+					</div>
+				</a>
+			</div>
+			
+			<!-- 오른쪽 글 -->
+			<div>
+				<a href="#">
+					<img src = image/newposts_3.jpg>
+					<div>
+						<h1>터키에는 천국으로 가는 그네있다..</h1>
+						<p>
+						2019. 08. 01
+						터키의 북서족에 위치한 "리제"에 도착했다. 네이버와 구글에
+						검색해 보아도 전혀 정보가 없는 북서쪽의 작은 도시이다.
+						이 곳을 온 이유는 단 하나, 천국에 있는것만 같은
+						</p>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		
+		<!-- 하단부  -->
+		<div class="footter">
+			<div class="OtherContent">
+				<div>다른곳으로 놀러가기</div>
+				<a href="https://www.youtube.com/channel/UC9Xtq9nnFUzQuHT8K_IwnPA?view_as=subscriber" target="_blank"><img class="youtube" src = image/youtube.png></a>
+				<a href="https://instagram.com/yuyeon_couple?igshid=1uxbigobj9tgd" target="_blank"><img class="instagram" src = image/instagram.png></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
